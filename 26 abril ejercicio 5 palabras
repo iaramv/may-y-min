@@ -1,0 +1,29 @@
+#include <ctype.h>
+#include <iostream>
+using namespace std;
+int main()
+{
+    int contmayusculas,contminusculas;
+    contmayusculas=0;
+    contminusculas=0;
+    cout<<"ingrese una frase con 5 palabras"<<endl;
+    string texto;
+    getline(cin, texto);
+    for (int i=0; i < texto.size();i++)
+    {
+        if (isupper(texto[i]))
+        {
+            contmayusculas++;
+        }
+        else
+        {
+            contminusculas++;
+        }
+
+    }
+    cout<<"Mayusculas son :"<< contmayusculas<<endl;
+    cout<<"minusculas son :"<< contminusculas <<endl;
+
+
+    return 0;
+}
