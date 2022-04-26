@@ -1,0 +1,59 @@
+#include <ctype.h>
+#include <iostream>
+#include <fstream>
+
+using namespace std;
+int main() { /** EJERCICIO 1
+{
+    int contmayusculas,contminusculas;
+    contmayusculas=0;
+    contminusculas=0;
+    cout<<"ingrese una frase con 5 palabras"<<endl;
+    string texto;
+    getline(cin, texto);
+    for (int i=0; i < texto.size();i++)
+    {
+        if (isupper(texto[i]))
+        {
+            contmayusculas++;
+        }
+        else
+        {
+            contminusculas++;
+        }
+
+    }
+    cout<<"Mayusculas son :"<< contmayusculas<<endl;
+    cout<<"minusculas son :"<< contminusculas <<endl;
+
+
+    return 0;
+    **/ /** EJERCICIO 2
+    int contadorletrasa = 0;
+    int contadorletrasZ = 0;
+    int contadorespacios = 0;
+    cout << "ingrese una frase " << endl;
+    string frase;
+    getline(cin, frase);
+
+    for (int i = 0; i < frase.size(); i++) {
+
+        switch(frase[i]) {
+            case 'a':
+                contadorletrasa++;
+                break;
+            case 'z':
+                contadorletrasZ++;
+                break;
+            case ' ':
+                contadorespacios++;
+                break;
+        }
+        }
+    cout<<"Z  son :"<< contadorletrasZ<<endl;
+    cout<<"A son :"<< contadorletrasa<<endl;
+    cout<<"espacios son :"<< contadorespacios<<endl;
+
+    return 0;
+    }
+**/
